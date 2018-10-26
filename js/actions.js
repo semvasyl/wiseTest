@@ -48,7 +48,6 @@ function setTaskState(blockID, id, state) {
     }
     rawTaskItems = {'action': actionName, 'blockID': blockID, 'taskID': id};
     responseTask = request(rawTaskItems);
-    console.log(responseTask);
     if (responseTask.message === 'success') {
         return true;
     }
@@ -180,7 +179,7 @@ $(document).ready(function () {
         if (confirm('Delete this tasks?')){
             removeTaskResult=removeTask($(this).data('blockId'),$(this).data('id'));
             if (removeTaskResult===true){
-                console.log($(this).parent().parent().remove());
+                $(this).parent().parent().remove();
             }
         }
     });

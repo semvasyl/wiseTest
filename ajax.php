@@ -140,9 +140,3 @@ if (isset($_POST['action'])) {
             break;
     }
 }
-
-//$todoList->add('perevirka');
-//$todoList->get(2)->add('pershyj task');
-//var_dump($todoList->get(6)->setTaskUnDoneState(5));
-
-//var_dump($todoList->delete(5));
