@@ -1,0 +1,25 @@
+body {
+    padding-top: 5rem;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.deleted-item {
+    text-decoration: line-through;
+}
+
+div.todo-block-group {
+    margin-bottom: 2em;
+}
+
+.fas-item {
+    display: none;
+}
+
+
+div.checkbox:hover > .fas-item {
+    display: inline-block;
+}
